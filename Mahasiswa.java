@@ -5,6 +5,11 @@ public abstract class Mahasiswa extends SIA{
     private int NIM;
     private String jurusan;
 
+    public Mahasiswa(int NIM, String jurusan) {
+        NIM = NIM;
+        this.jurusan = jurusan;
+    }
+
     public String getJurusan() {
         return jurusan;
     }

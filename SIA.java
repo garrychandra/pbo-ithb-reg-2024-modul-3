@@ -1,12 +1,19 @@
 
-import java.util.Date;
 
 public abstract class SIA{
     String nama;
     String alamat;
-    String tempatLahir;
-    Date tanggalLahir;
+    String ttl;
     int noTelp;
+
+    
+    public SIA(String nama, String alamat, String ttl, int noTelp) {
+        this.nama = nama;
+        this.alamat = alamat;
+        this.ttl = ttl;
+        this.noTelp = noTelp;
+    }
+
 
     public void setNama(String nama) {
         this.nama = nama;
@@ -24,28 +31,20 @@ public abstract class SIA{
         return alamat;
     }
 
-    public String getTempatLahir() {
-        return tempatLahir;
-    }
-
-    public void setTempatLahir(String tempatLahir) {
-        this.tempatLahir = tempatLahir;
-    }
-
-    public Date getTanggalLahir() {
-        return tanggalLahir;
-    }
-
-    public void setTanggalLahir(Date tanggalLahir) {
-        this.tanggalLahir = tanggalLahir;
-    }
-
     public int getNoTelp() {
         return noTelp;
     }
 
     public void setNoTelp(int noTelp) {
         this.noTelp = noTelp;
+    }
+
+    public String getTtl() {
+        return ttl;
+    }
+
+    public void setTtl(String ttl) {
+        this.ttl = ttl;
     }
 
 
