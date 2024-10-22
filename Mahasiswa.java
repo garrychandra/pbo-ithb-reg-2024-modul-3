@@ -1,5 +1,3 @@
-
-
 public abstract class Mahasiswa extends SIA{
 
     private int NIM;
@@ -34,6 +32,6 @@ public abstract class Mahasiswa extends SIA{
 
     @Override
     public String toString(){
-        return NIM + " " + jurusan;
+        return super.toString() + NIM + " " + jurusan;
     }
 }

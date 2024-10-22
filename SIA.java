@@ -53,5 +53,9 @@ public abstract class SIA{
         this.ttl = ttl;
     }
 
+    @Override
+    public String toString() {
+        return "Nama: " + nama + "\nalamat: " + alamat + "\nTempat tanggal lahir" + ttl + "\nno telp: " + noTelp;
+    }
 
 }

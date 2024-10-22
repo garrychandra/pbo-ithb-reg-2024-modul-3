@@ -1,8 +1,13 @@
-public class MataKuliah {
+public abstract class MataKuliah {
     private int kode;
     private int sks;
     private String nama;
 
+    public MataKuliah(int kode, int sks, String nama){
+        this.kode = kode;
+        this.sks = sks;
+        this.nama = nama;
+    }
     public int getKode() {
         return kode;
     }
@@ -25,5 +30,10 @@ public class MataKuliah {
 
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    @Override
+    public String toString() {
+        return "kode: " + kode + "\nsks: " + sks + "\nnama: " + nama; 
     }
 }

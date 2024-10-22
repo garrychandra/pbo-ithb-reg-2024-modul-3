@@ -1,29 +1,30 @@
-import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Sarjana extends Mahasiswa{
-    private MataKuliah [] matkul;
+    private List<MatkulAmbil> matkul;
 
-    public Sarjana(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, MataKuliah[] matkul) {
+    public Sarjana(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, List<MatkulAmbil>  matkul) {
         super(nama, alamat, ttl, noTelp, nim, jurusan);
         this.matkul = matkul;
     }
 
     public Sarjana(){
         super();
-        matkul = new MataKuliah[0];
+        matkul = new ArrayList<MatkulAmbil>();
     }
 
-    public MataKuliah[] getMatkul() {
+    public List<MatkulAmbil>  getMatkul() {
         return matkul;
     }
 
-    public void setMatkul(MataKuliah[] matkul) {
+    public void setMatkul(List<MatkulAmbil> matkul) {
         this.matkul = matkul;
     }
 
     @Override
     public String toString() {
-        return super.toString() + " " + Arrays.toString(matkul);
+        return super.toString() + " " + matkul.toString();
     }
 
 

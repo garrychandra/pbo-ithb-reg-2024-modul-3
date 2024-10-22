@@ -50,5 +50,10 @@ public class Doktor extends Mahasiswa{
         this.sidang3 = sidang3;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\njudul penelitian: " + judulPenelitian + "\nnilai sidang 1: " + sidang1 + "\nnilai sidang 2: " + sidang2 + "\nnilai sidang 3: " + sidang3;
+    }
+
     
 }
