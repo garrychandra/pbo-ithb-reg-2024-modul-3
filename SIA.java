@@ -1,10 +1,10 @@
 
 
 public abstract class SIA{
-    String nama;
-    String alamat;
-    String ttl;
-    int noTelp;
+    private String nama;
+    private String alamat;
+    private String ttl;
+    private int noTelp;
 
     
     public SIA(String nama, String alamat, String ttl, int noTelp) {
@@ -14,6 +14,12 @@ public abstract class SIA{
         this.noTelp = noTelp;
     }
 
+    public SIA(){
+        nama = "";
+        alamat = "";
+        ttl = "";
+        noTelp = 0;
+    }
 
     public void setNama(String nama) {
         this.nama = nama;

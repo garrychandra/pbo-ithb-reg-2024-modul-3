@@ -2,13 +2,20 @@ import java.util.Arrays;
 
 public class Magister extends Mahasiswa{
 
-    MataKuliah [] matkul;
-    String judulPenelitian;
+    private MataKuliah [] matkul;
+    private String judulPenelitian;
 
-    public Magister(int NIM, String jurusan,MataKuliah[] matkul, String judulPenelitian) {
-        super(NIM, jurusan);
+    public Magister(String nama, String alamat, String ttl, int noTelp, int NIM, String jurusan, MataKuliah[] matkul, String judulPenelitian) {
+        
+        super(nama, alamat, ttl, noTelp, NIM, jurusan);
         this.matkul = matkul;
         this.judulPenelitian = judulPenelitian;
+    }
+
+    public Magister(){
+        super();
+        matkul = new MataKuliah[0];
+        judulPenelitian = "";
     }
 
     public MataKuliah[] getMatkul() {

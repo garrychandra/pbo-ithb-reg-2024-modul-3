@@ -1,11 +1,16 @@
 import java.util.Arrays;
 
 public class Sarjana extends Mahasiswa{
-    MataKuliah [] matkul;
+    private MataKuliah [] matkul;
 
-    public Sarjana(int nim, String jurusan, MataKuliah[] matkul) {
-        super(nim,jurusan);
+    public Sarjana(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, MataKuliah[] matkul) {
+        super(nama, alamat, ttl, noTelp, nim, jurusan);
         this.matkul = matkul;
+    }
+
+    public Sarjana(){
+        super();
+        matkul = new MataKuliah[0];
     }
 
     public MataKuliah[] getMatkul() {

@@ -1,7 +1,7 @@
 public class MataKuliah {
-    int kode;
-    int sks;
-    String nama;
+    private int kode;
+    private int sks;
+    private String nama;
 
     public int getKode() {
         return kode;

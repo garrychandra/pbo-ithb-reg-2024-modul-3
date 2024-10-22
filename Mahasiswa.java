@@ -5,9 +5,15 @@ public abstract class Mahasiswa extends SIA{
     private int NIM;
     private String jurusan;
 
-    public Mahasiswa(int NIM, String jurusan) {
-        NIM = NIM;
+    public Mahasiswa(String nama, String alamat, String ttl, int noTelp, int NIM, String jurusan) {
+        super(nama, alamat, ttl, noTelp);
+        this.NIM = NIM;
         this.jurusan = jurusan;
+    }
+
+    public Mahasiswa(){
+        NIM = 0;
+        jurusan = "";
     }
 
     public String getJurusan() {
