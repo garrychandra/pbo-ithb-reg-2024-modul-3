@@ -1,4 +1,4 @@
-public class Doktor extends Mahasiswa{
+public class Doktor extends Mahasiswa {
     private String judulPenelitian;
     private int sidang1 = 0;
     private int sidang2 = 0;
@@ -9,10 +9,10 @@ public class Doktor extends Mahasiswa{
         this.judulPenelitian = judulPenelitian;
     }
 
-    public Doktor(){
+    public Doktor() {
         judulPenelitian = "";
     }
-    
+
     public String getJudulPenelitian() {
         return judulPenelitian;
     }
@@ -47,8 +47,8 @@ public class Doktor extends Mahasiswa{
 
     @Override
     public String toString() {
-        return super.toString() + "\njudul penelitian: " + judulPenelitian + "\nnilai sidang 1: " + sidang1 + "\nnilai sidang 2: " + sidang2 + "\nnilai sidang 3: " + sidang3;
+        return super.toString() + "\njudul penelitian: " + judulPenelitian + "\nnilai sidang 1: " + sidang1
+                + "\nnilai sidang 2: " + sidang2 + "\nnilai sidang 3: " + sidang3;
     }
 
-    
 }

@@ -3,18 +3,18 @@ import java.sql.Date;
 public class Presensi {
     private Date date;
     private Status status;
-    
-    public Presensi(Date date, Status status){
+
+    public Presensi(Date date, Status status) {
         this.date = date;
         this.status = status;
     }
 
-    public Presensi(Date date, int status){
+    public Presensi(Date date, int status) {
         this.date = date;
         this.status = Status.values()[status];
     }
 
-    public Presensi(){
+    public Presensi() {
         date = new Date(0);
         status = Status.ALPHA;
     }
@@ -33,6 +33,11 @@ public class Presensi {
 
     public Status getStatus() {
         return status;
+    }
+
+    @Override
+    public String toString() {
+        return "Tanggal: " + date.toString() + " Status: " + status;
     }
 
 }

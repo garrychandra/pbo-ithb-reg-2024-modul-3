@@ -3,17 +3,18 @@ public class MataKuliah {
     private int sks;
     private String nama;
 
-    public MataKuliah(int kode, int sks, String nama){
+    public MataKuliah(int kode, int sks, String nama) {
         this.kode = kode;
         this.sks = sks;
         this.nama = nama;
     }
 
-    public MataKuliah(){
+    public MataKuliah() {
         kode = 0;
         sks = 0;
         nama = "";
     }
+
     public int getKode() {
         return kode;
     }
@@ -40,6 +41,6 @@ public class MataKuliah {
 
     @Override
     public String toString() {
-        return "kode: " + kode + "\nsks: " + sks + "\nnama: " + nama; 
+        return "kode: " + kode + "\nsks: " + sks + "\nnama: " + nama;
     }
 }

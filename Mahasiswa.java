@@ -1,4 +1,4 @@
-public abstract class Mahasiswa extends SIA{
+public abstract class Mahasiswa extends SIA {
 
     private int NIM;
     private String jurusan;
@@ -9,7 +9,7 @@ public abstract class Mahasiswa extends SIA{
         this.jurusan = jurusan;
     }
 
-    protected Mahasiswa(){
+    protected Mahasiswa() {
         NIM = 0;
         jurusan = "";
     }
@@ -31,7 +31,7 @@ public abstract class Mahasiswa extends SIA{
     }
 
     @Override
-    public String toString(){
-        return super.toString() + NIM + " " + jurusan;
+    public String toString() {
+        return super.toString() + "\nNIM: " + NIM + "\nJurusan: " + jurusan;
     }
 }

@@ -1,12 +1,10 @@
 
-
-public abstract class SIA{
+public abstract class SIA {
     private String nama;
     private String alamat;
     private String ttl;
     private int noTelp;
 
-    
     protected SIA(String nama, String alamat, String ttl, int noTelp) {
         this.nama = nama;
         this.alamat = alamat;
@@ -14,7 +12,7 @@ public abstract class SIA{
         this.noTelp = noTelp;
     }
 
-    protected SIA(){
+    protected SIA() {
         nama = "";
         alamat = "";
         ttl = "";
@@ -55,7 +53,7 @@ public abstract class SIA{
 
     @Override
     public String toString() {
-        return "Nama: " + nama + "\nalamat: " + alamat + "\nTempat tanggal lahir" + ttl + "\nno telp: " + noTelp;
+        return "Nama: " + nama + "\nalamat: " + alamat + "\nTempat tanggal lahir: " + ttl + "\nno telp: " + noTelp;
     }
 
 }

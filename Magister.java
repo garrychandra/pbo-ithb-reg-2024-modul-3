@@ -1,29 +1,30 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class Magister extends Mahasiswa{
+public class Magister extends Mahasiswa {
 
-    private List<MataKuliah> matkul;
+    private List<MatkulAmbil> matkul;
     private String judulPenelitian;
 
-    public Magister(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, List<MataKuliah> matkul, String judulPenelitian) {
-        
+    public Magister(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan,
+            String judulPenelitian) {
+
         super(nama, alamat, ttl, noTelp, nim, jurusan);
-        this.matkul = matkul;
+        matkul = new ArrayList<>();
         this.judulPenelitian = judulPenelitian;
     }
 
-    public Magister(){
+    public Magister() {
         super();
-        matkul = new ArrayList<MataKuliah>();
+        matkul = new ArrayList<>();
         judulPenelitian = "";
     }
 
-    public List<MataKuliah> getMatkul() {
+    public List<MatkulAmbil> getMatkul() {
         return matkul;
     }
 
-    public void setMatkul(List<MataKuliah> matkul) {
+    public void setMatkul(List<MatkulAmbil> matkul) {
         this.matkul = matkul;
     }
 
@@ -37,6 +38,6 @@ public class Magister extends Mahasiswa{
 
     @Override
     public String toString() {
-        return super.toString() + " " + matkul.toString() + " " + judulPenelitian;
+        return super.toString() + "\nMata Kuliah: " + matkul.toString() + "\nJudul Penelitian: " + judulPenelitian;
     }
 }

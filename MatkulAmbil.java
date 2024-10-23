@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 
 public class MatkulAmbil {
     private MataKuliah mataKuliah;
@@ -7,12 +8,17 @@ public class MatkulAmbil {
     private int n2;
     private int n3;
 
-    public MatkulAmbil(int kode, int sks, String nama, List<Presensi> presensi, int n1, int n2, int n3) {
+    public MatkulAmbil(int kode, int sks, String nama, int n1, int n2, int n3) {
         mataKuliah = new MataKuliah(kode, sks, nama);
-        this.presensi = presensi;
+        presensi = new ArrayList<>();
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n2;
+    }
+
+    public MatkulAmbil(){
+        mataKuliah = new MataKuliah();
+        presensi = new ArrayList<Presensi>();
     }
 
     public MataKuliah getMataKuliah() {
@@ -53,6 +59,12 @@ public class MatkulAmbil {
 
     public int getN3() {
         return n3;
+    }
+
+    @Override
+    public String toString() {
+        return mataKuliah.toString() + "\nPresensi: " + presensi + "\nNilai 1: " + n1 + "\nNilai 2: " + n2
+                + "\nNilai 3: " + n3;
     }
 
 }

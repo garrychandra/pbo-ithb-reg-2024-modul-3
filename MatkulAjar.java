@@ -1,18 +1,18 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class MatkulAjar{
+public class MatkulAjar {
     private MataKuliah mataKuliah;
     private List<PresensiStaff> presensi;
 
-    public MatkulAjar(int kode, int sks, String nama, List<PresensiStaff> presensi){
+    public MatkulAjar(int kode, int sks, String nama) {
         mataKuliah = new MataKuliah(kode, sks, nama);
-        this.presensi = presensi;
+        presensi = new ArrayList<>();
     }
 
-    public MatkulAjar(){
+    public MatkulAjar() {
         mataKuliah = new MataKuliah();
-        presensi = new ArrayList<PresensiStaff>();
+        presensi = new ArrayList<>();
     }
 
     public MataKuliah getMataKuliah() {
@@ -29,5 +29,10 @@ public class MatkulAjar{
 
     public void setPresensi(List<PresensiStaff> presensi) {
         this.presensi = presensi;
+    }
+
+    @Override
+    public String toString() {
+        return mataKuliah.toString() + "\nPresensi: " + presensi.toString();
     }
 }

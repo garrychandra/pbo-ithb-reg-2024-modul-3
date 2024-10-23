@@ -1,20 +1,20 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class Sarjana extends Mahasiswa{
+public class Sarjana extends Mahasiswa {
     private List<MatkulAmbil> matkul;
 
-    public Sarjana(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, List<MatkulAmbil>  matkul) {
+    public Sarjana(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan){
         super(nama, alamat, ttl, noTelp, nim, jurusan);
-        this.matkul = matkul;
+        matkul = new ArrayList<>();
     }
 
-    public Sarjana(){
+    public Sarjana() {
         super();
-        matkul = new ArrayList<MatkulAmbil>();
+        matkul = new ArrayList<>();
     }
 
-    public List<MatkulAmbil>  getMatkul() {
+    public List<MatkulAmbil> getMatkul() {
         return matkul;
     }
 
@@ -24,8 +24,7 @@ public class Sarjana extends Mahasiswa{
 
     @Override
     public String toString() {
-        return super.toString() + " " + matkul.toString();
+        return super.toString() + "\n" + matkul.toString();
     }
-
 
 }
