@@ -2,8 +2,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Karyawan extends Staff {
-    int salary;
-    List<PresensiStaff> presensiStaff;
+    private int salary;
+    private List<PresensiStaff> presensiStaff;
 
     public Karyawan(String nama, String alamat, String ttl, int noTelp, int nik, int salary) {
         super(nama, alamat, ttl, noTelp, nik);
