@@ -1,9 +1,19 @@
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public abstract class Dosen{
-    String departemen;
-    List<MatkulAjar> matkulAjar;
+    private String departemen;
+    private List<MatkulAjar> matkulAjar;
+
+    protected Dosen(String departemen, List<MatkulAjar> matkulAjar){
+        this.departemen = departemen;
+        this.matkulAjar = matkulAjar;
+    }
+
+    protected Dosen(){
+        departemen = "";
+        matkulAjar = new ArrayList<MatkulAjar>();
+    }
     
     public void setDepartemen(String departemen) {
         this.departemen = departemen;

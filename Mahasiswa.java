@@ -3,13 +3,13 @@ public abstract class Mahasiswa extends SIA{
     private int NIM;
     private String jurusan;
 
-    public Mahasiswa(String nama, String alamat, String ttl, int noTelp, int NIM, String jurusan) {
+    protected Mahasiswa(String nama, String alamat, String ttl, int noTelp, int NIM, String jurusan) {
         super(nama, alamat, ttl, noTelp);
         this.NIM = NIM;
         this.jurusan = jurusan;
     }
 
-    public Mahasiswa(){
+    protected Mahasiswa(){
         NIM = 0;
         jurusan = "";
     }

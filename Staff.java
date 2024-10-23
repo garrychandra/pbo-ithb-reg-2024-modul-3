@@ -1,19 +1,21 @@
 public abstract class Staff extends SIA {
-    private int NIK;
+    private int nik;
     
-    public Staff(){
-        NIK = 0;
+    protected Staff(){
+        super();
+        nik = 0;
     }
 
-    public Staff(int NIK){
-        this.NIK = NIK;
+    protected Staff(String nama, String alamat, String ttl, int noTelp, int nik){
+        super(nama, alamat, ttl, noTelp);
+        this.nik = nik;
     }
 
-    public void setNIK(int nIK) {
-        NIK = nIK;
+    public void setnik(int nIK) {
+        nik = nIK;
     }
 
-    public int getNIK() {
-        return NIK;
+    public int getnik() {
+        return nik;
     }
 }

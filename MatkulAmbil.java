@@ -1,17 +1,26 @@
 import java.util.List;
 
-public class MatkulAmbil extends MataKuliah{
+public class MatkulAmbil {
+    private MataKuliah mataKuliah;
     private List<Presensi> presensi;
     private int n1;
     private int n2;
     private int n3;
 
-    public MatkulAmbil(int kode, int sks, String nama, List<Presensi> presensi, int n1, int n2, int n3){
-        super(kode, sks, nama);
+    public MatkulAmbil(int kode, int sks, String nama, List<Presensi> presensi, int n1, int n2, int n3) {
+        mataKuliah = new MataKuliah(kode, sks, nama);
         this.presensi = presensi;
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n2;
+    }
+
+    public MataKuliah getMataKuliah() {
+        return mataKuliah;
+    }
+
+    public void setMataKuliah(MataKuliah mataKuliah) {
+        this.mataKuliah = mataKuliah;
     }
 
     public List<Presensi> getPresensi() {

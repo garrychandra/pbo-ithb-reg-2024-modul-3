@@ -7,14 +7,14 @@ public abstract class SIA{
     private int noTelp;
 
     
-    public SIA(String nama, String alamat, String ttl, int noTelp) {
+    protected SIA(String nama, String alamat, String ttl, int noTelp) {
         this.nama = nama;
         this.alamat = alamat;
         this.ttl = ttl;
         this.noTelp = noTelp;
     }
 
-    public SIA(){
+    protected SIA(){
         nama = "";
         alamat = "";
         ttl = "";

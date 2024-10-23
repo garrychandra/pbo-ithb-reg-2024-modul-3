@@ -1,23 +1,18 @@
 public class Doktor extends Mahasiswa{
     private String judulPenelitian;
-    private int sidang1;
-    private int sidang2;
-    private int sidang3;
+    private int sidang1 = 0;
+    private int sidang2 = 0;
+    private int sidang3 = 0;
 
-    public Doktor(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, String judulPenelitian, int sidang1, int sidang2, int sidang3) {
+    public Doktor(String nama, String alamat, String ttl, int noTelp, int nim, String jurusan, String judulPenelitian) {
         super(nama, alamat, ttl, noTelp, nim, jurusan);
         this.judulPenelitian = judulPenelitian;
-        this.sidang1 = sidang1;
-        this.sidang2 = sidang2;
-        this.sidang3 = sidang3;
     }
 
     public Doktor(){
         judulPenelitian = "";
-        sidang1 = 0;
-        sidang2 = 0;
-        sidang3 = 0;
     }
+    
     public String getJudulPenelitian() {
         return judulPenelitian;
     }

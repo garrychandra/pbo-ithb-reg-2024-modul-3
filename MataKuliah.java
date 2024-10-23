@@ -1,4 +1,4 @@
-public abstract class MataKuliah {
+public class MataKuliah {
     private int kode;
     private int sks;
     private String nama;
@@ -7,6 +7,12 @@ public abstract class MataKuliah {
         this.kode = kode;
         this.sks = sks;
         this.nama = nama;
+    }
+
+    public MataKuliah(){
+        kode = 0;
+        sks = 0;
+        nama = "";
     }
     public int getKode() {
         return kode;
