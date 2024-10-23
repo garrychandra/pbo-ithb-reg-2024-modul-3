@@ -53,7 +53,7 @@ public abstract class SIA {
 
     @Override
     public String toString() {
-        return "Nama: " + nama + "\nalamat: " + alamat + "\nTempat tanggal lahir: " + ttl + "\nno telp: " + noTelp;
+        return "Nama: " + nama + "\nalamat: " + alamat + "\nTempat tanggal lahir: " + ttl + "\nno telp: 0" + noTelp;
     }
 
 }

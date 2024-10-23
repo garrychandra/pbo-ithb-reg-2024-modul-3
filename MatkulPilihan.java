@@ -1,17 +1,14 @@
 public class MatkulPilihan extends MataKuliah {
-    private static int counter = 0;
     private int jumlahMinimum;
 
     public MatkulPilihan(int kode, int sks, String nama, int jumlahMinimum) {
         super(kode, sks, nama);
-        this.jumlahMinimum = jumlahMinimum;
-        counter++;
+        this.jumlahMinimum = jumlahMinimum;    
     }
 
     public MatkulPilihan() {
         super();
         jumlahMinimum = 0;
-        counter++;
     }
 
     public void setJumlahMinimum(int jumlahMinimum) {
@@ -24,8 +21,7 @@ public class MatkulPilihan extends MataKuliah {
 
     @Override
     public String toString() {
-        return super.toString() + "\nJumlah yang mengambil Mata Kuliah: " + counter + "\nJumlah Minimum: "
-                + jumlahMinimum;
+        return super.toString() + "\nJumlah Minimum: " + jumlahMinimum;
     }
 
 }

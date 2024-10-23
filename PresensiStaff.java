@@ -29,7 +29,7 @@ public class PresensiStaff extends Presensi {
 
     @Override
     public String toString() {
-        return super.toString() + "Jam: " + jam.toString();
+        return super.toString() + " Jam: " + jam.toString();
     }
 
 }

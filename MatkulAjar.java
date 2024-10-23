@@ -5,8 +5,8 @@ public class MatkulAjar {
     private MataKuliah mataKuliah;
     private List<PresensiStaff> presensi;
 
-    public MatkulAjar(int kode, int sks, String nama) {
-        mataKuliah = new MataKuliah(kode, sks, nama);
+    public MatkulAjar(MataKuliah mataKuliah) {
+        this.mataKuliah = mataKuliah;
         presensi = new ArrayList<>();
     }
 

@@ -8,8 +8,8 @@ public class MatkulAmbil {
     private int n2;
     private int n3;
 
-    public MatkulAmbil(int kode, int sks, String nama, int n1, int n2, int n3) {
-        mataKuliah = new MataKuliah(kode, sks, nama);
+    public MatkulAmbil(MataKuliah mataKuliah, int n1, int n2, int n3) {
+        this.mataKuliah = mataKuliah;
         presensi = new ArrayList<>();
         this.n1 = n1;
         this.n2 = n2;
@@ -64,7 +64,7 @@ public class MatkulAmbil {
     @Override
     public String toString() {
         return mataKuliah.toString() + "\nPresensi: " + presensi + "\nNilai 1: " + n1 + "\nNilai 2: " + n2
-                + "\nNilai 3: " + n3;
+                + "\nNilai 3: " + n3 + "\n";
     }
 
 }
